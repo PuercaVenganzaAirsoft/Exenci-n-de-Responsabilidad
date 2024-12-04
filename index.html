@@ -17,56 +17,54 @@
             position: relative;
             flex-direction: column;
             text-align: center;
+            padding: 20px;
         }
-        form {
+        .content {
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 800px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        input, textarea, button {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        .content label {
+            margin-top: 10px;
+        }
+        .content input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
             border: 1px solid #ccc;
+            border-radius: 4px;
         }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .signature {
+            margin-top: 20px;
         }
-        button:hover {
-            background-color: #45a049;
+        .signature input {
+            margin-top: 10px;
+            padding: 8px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         .logo-top-right {
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 100px; /* Ajusta el tamaño según lo necesites */
+            width: 100px;
         }
         .logo-bottom-left {
             position: absolute;
             bottom: 10px;
             left: 10px;
-            width: 100px; /* Ajusta el tamaño según lo necesites */
-        }
-        .terms {
-            text-align: left;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #333;
-            white-space: pre-wrap; /* Para que el texto se ajuste */
-        }
-        .signature {
-            margin-bottom: 10px;
+            width: 100px;
         }
     </style>
 </head>
@@ -75,33 +73,27 @@
     <!-- Logo superior derecho -->
     <img src="logo.png" alt="Logo Superior Derecho" class="logo-top-right">
 
-    <!-- Formulario -->
-    <form action="https://formspree.io/f/your-form-id" method="POST">
+    <div class="content">
         <h2>Formulario General de Exención de Responsabilidad Puerca Venganza</h2>
 
-        <div class="terms">
-            DNI y firma del Librador________________________<br><br>
-            Yo ________________________________________ En Cáceres<br><br>
-            ASUMO TODOS LOS RIESGOS DE PARTICIPAR EN CUALQUIERA / TODAS LAS ACTIVIDADES llevadas a cabo por la organización de Puerca Venganza, incluyendo a modo de ejemplo y sin limitación, cualquier riesgo que pueda surgir por negligencia o descuido por parte de las personas o entidades liberadas, por equipos o bienes peligrosos o defectuosos que sean de su propiedad, mantenidos o controlados por ellos, o por su posible responsabilidad sin culpa.<br><br>
-            CERTIFICO que estoy en buena forma física, que tengo suficiente preparación o capacitación para participar en esta actividad y que no he sido recomendado por un profesional médico cualificado para no participar.<br><br>
-            CERTIFICO que no hay motivos o problemas relacionados con la salud que impidan mi participación en esta actividad.<br><br>
-            Reconozco que los titulares, patrocinadores y organizadores de la actividad en la que puedo participar utilizarán este Formulario de exención de responsabilidad por accidente y exención de responsabilidad, y que regirá mis acciones y responsabilidades en dicha actividad. En consideración a mi solicitud y permitiéndole participar en esta actividad, por la presente tomo medidas para mí, mis ejecutores, administradores, herederos, parientes más próximos, sucesores asignando de la siguiente manera:<br><br>
-            (1) RENUNCIO, LIBERO Y DESCARGO de cualquier responsabilidad, incluida, entre otras la responsabilidad derivada de la negligencia o culpa de las entidades o personas liberadas, por mi muerte, discapacidad, lesión personal, daño a la propiedad, robo de propiedad o acciones de cualquier tipo que pueda ocurrir en el futuro, incluido mi viaje hacia y desde esta actividad, LAS SIGUIENTES ENTIDADES O PERSONAS DE LA ORGANIZACIÓN DE PUERCA VENGANZA, sus directores, funcionarios, empleados, voluntarios, representantes y agentes, y los titulares de actividades y patrocinadores.<br><br>
-            (2) INDEMNIFICAR, CUMPLIR CON OBJETO Y PROMETER QUE NO LLEGARÁ a las entidades o personas mencionadas en este párrafo de todas las responsabilidades reclamaciones hechas como resultado de la participación en esta actividad, ya sea causada por la negligencia de la liberación o de otra manera. Yo reconozco que sus directores, funcionarios, voluntarios, representantes y agentes NO son responsables de los errores, omisiones o actos de cualquier parte o entidad que realice una actividad específica en su nombre.<br><br>
+        <p><strong>DNI y firma del Librador:</strong> 
+            <input type="text" name="dni_firma_librador" placeholder="Escribe aquí tu DNI y firma">
+        </p>
+        <p>Yo <input type="text" name="nombre" placeholder="Escribe tu nombre"> En Cáceres</p>
+        <p>ASUMO TODOS LOS RIESGOS DE PARTICIPAR EN CUALQUIERA / TODAS LAS ACTIVIDADES llevadas a cabo por la organización de Puerca Venganza, incluyendo a modo de ejemplo y sin limitación, cualquier riesgo que pueda surgir por negligencia o descuido por parte de las personas o entidades liberadas, por equipos o bienes peligrosos o defectuosos que sean de su propiedad, mantenidos o controlados por ellos, o por su posible responsabilidad sin culpa.</p>
+        <p>CERTIFICO que estoy en buena forma física, que tengo suficiente preparación o capacitación para participar en esta actividad y que no he sido recomendado por un profesional médico cualificado para no participar.</p>
+        <p>CERTIFICO que no hay motivos o problemas relacionados con la salud que impidan mi participación en esta actividad.</p>
+        <p>Reconozco que los titulares, patrocinadores y organizadores de la actividad en la que puedo participar utilizarán este Formulario de exención de responsabilidad por accidente y exención de responsabilidad, y que regirá mis acciones y responsabilidades en dicha actividad. En consideración a mi solicitud y permitiéndole participar en esta actividad, por la presente tomo medidas para mí, mis ejecutores, administradores, herederos, parientes más próximos, sucesores asignando de la siguiente manera:</p>
+        <p>(1) RENUNCIO, LIBERO Y DESCARGO de cualquier responsabilidad, incluida, entre otras la responsabilidad derivada de la negligencia o culpa de las entidades o personas liberadas, por mi muerte, discapacidad, lesión personal, daño a la propiedad, robo de propiedad o acciones de cualquier tipo que pueda ocurrir en el futuro, incluido mi viaje hacia y desde esta actividad, LAS SIGUIENTES ENTIDADES O PERSONAS DE LA ORGANIZACIÓN DE PUERCA VENGANZA, sus directores, funcionarios, empleados, voluntarios, representantes y agentes, y los titulares de actividades y patrocinadores.</p>
+        <p>(2) INDEMNIFICAR, CUMPLIR CON OBJETO Y PROMETER QUE NO LLEGARÁ a las entidades o personas mencionadas en este párrafo de todas las responsabilidades reclamaciones hechas como resultado de la participación en esta actividad, ya sea causada por la negligencia de la liberación o de otra manera. Yo reconozco que sus directores, funcionarios, voluntarios, representantes y agentes NO son responsables de los errores, omisiones o actos de cualquier parte o entidad que realice una actividad específica en su nombre.</p>
+
+        <div class="signature">
+            <label for="firma">Firma del Librador:</label>
+            <input type="text" id="firma" name="firma" placeholder="Escribe tu firma">
+            <label for="dni_librador">DNI:</label>
+            <input type="text" id="dni_librador" name="dni_librador" placeholder="Escribe tu DNI">
         </div>
-
-        <!-- Campos de Firma -->
-        <label for="name">Nombre del Librador:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="dni">DNI:</label>
-        <input type="text" id="dni" name="dni" required>
-
-        <label for="signature">Firma:</label>
-        <input type="text" id="signature" name="signature" required>
-
-        <button type="submit">Enviar</button>
-    </form>
+    </div>
 
     <!-- Logo inferior izquierdo -->
     <img src="logo1.png" alt="Logo Inferior Izquierdo" class="logo-bottom-left">
