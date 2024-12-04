@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative; /* Asegura que el logo se posicione correctamente */
         }
         .container {
             background-color: white;
@@ -67,9 +68,20 @@
         .checkbox-container input {
             margin-right: 10px;
         }
+        /* Logo en la esquina superior derecha */
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
     </style>
 </head>
 <body>
+    <!-- Logo en la esquina superior derecha -->
+    <img src="Logo.png" alt="Logo" class="logo">
+
     <div class="container">
         <h1>Formulario General de Exención de Responsabilidad</h1>
         <form action="https://formspree.io/f/mgvedred" method="POST">
