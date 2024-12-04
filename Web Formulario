@@ -60,7 +60,7 @@
 <body>
 
     <!-- Logo superior derecho -->
-    <img src="logo1.png" alt="Logo Superior Derecho" class="logo-top-right">
+    <img src="logo.png" alt="Logo Superior Derecho" class="logo-top-right">
 
     <!-- Formulario -->
     <form action="https://formspree.io/f/your-form-id" method="POST">
@@ -77,7 +77,7 @@
     </form>
 
     <!-- Logo inferior izquierdo -->
-    <img src="logo2.png" alt="Logo Inferior Izquierdo" class="logo-bottom-left">
+    <img src="logo1.png" alt="Logo Inferior Izquierdo" class="logo-bottom-left">
 
 </body>
 </html>
