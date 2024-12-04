@@ -14,18 +14,20 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            position: relative; /* Asegura que el logo se posicione correctamente */
+            position: relative; /* Asegura que los logos se posicionen correctamente */
+            color: #333; /* Texto en un tono oscuro para legibilidad */
         }
         .container {
-            background-color: white;
+            background-color: #ffffff;
             padding: 20px;
             width: 70%;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #b24546; /* Borde rojo alrededor del contenedor */
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #b24546; /* Color de encabezado en rojo */
         }
         .form-field {
             margin: 15px 0;
@@ -34,6 +36,7 @@
             font-weight: bold;
             display: block;
             margin-bottom: 5px;
+            color: #b24546; /* Etiquetas de los campos en color rojo */
         }
         input[type="text"], input[type="email"], input[type="date"], textarea {
             width: 100%;
@@ -41,16 +44,17 @@
             margin-top: 5px;
             border: 1px solid #ddd;
             border-radius: 4px;
+            background-color: #f9f9f9;
         }
         textarea {
             height: 150px;
         }
         .underline {
-            border-bottom: 1px solid #000;
+            border-bottom: 2px solid #b24546; /* Subrayado en rojo */
             width: 100%;
         }
         .submit-btn {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Botón de envío verde */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -59,7 +63,7 @@
             width: 100%;
         }
         .submit-btn:hover {
-            background-color: #45a049;
+            background-color: #45a049; /* Efecto hover en el botón */
         }
         .checkbox-container {
             margin-top: 20px;
@@ -73,14 +77,37 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 350px; /* Ajusta el tamaño del logo */
+            width: 350px;
             height: auto;
+        }
+        /* Nuevo logo en la esquina inferior derecha */
+        .logo1 {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 350px;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #b24546; /* Enlaces en rojo */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- Logo en la esquina superior derecha -->
     <img src="Logo.png" alt="Logo" class="logo">
+    <!-- Nuevo logo en la esquina inferior derecha -->
+    <img src="Logo1.png" alt="Nuevo Logo" class="logo1">
 
     <div class="container">
         <h1>Formulario General de Exención de Responsabilidad</h1>
@@ -124,6 +151,10 @@
 
             <button type="submit" class="submit-btn">Enviar Formulario</button>
         </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 PUERCA VENGANZA. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
     </div>
 </body>
 </html>
