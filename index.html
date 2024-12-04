@@ -42,7 +42,7 @@
             border-radius: 4px;
         }
         textarea {
-            height: 100px;
+            height: 150px;
         }
         .underline {
             border-bottom: 1px solid #000;
@@ -60,48 +60,50 @@
         .submit-btn:hover {
             background-color: #45a049;
         }
+        .checkbox-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .checkbox-container input {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Formulario General de Exención de Responsabilidad</h1>
         <form action="https://formspree.io/f/mgvedred" method="POST">
+            <p><strong>Formulario de Exoneración de Responsabilidad</strong></p>
+
+            <p>ASUMO TODOS LOS RIESGOS DE PARTICIPAR EN CUALQUIERA / TODAS LAS ACTIVIDADES llevadas a cabo por la organización de PUERCA VENGANZA, incluyendo a modo de ejemplo y sin limitación, cualquier riesgo que pueda surgir por negligencia o descuido por parte de las personas o entidades liberadas, por equipos o bienes peligrosos o defectuosos que sean de su propiedad, mantenidos o controlados por ellos, o por su posible responsabilidad sin culpa.</p>
+            
+            <p>CERTIFICO que estoy en buena forma física, que tengo suficiente preparación o capacitación para participar en esta actividad y que no he sido recomendado por un profesional médico cualificado para no participar.</p>
+            
+            <p>CERTIFICO que no hay motivos o problemas relacionados con la salud que impidan mi participación en esta actividad.</p>
+            
+            <p>Reconozco que los titulares, patrocinadores y organizadores de la actividad en la que puedo participar utilizarán este Formulario de exención de responsabilidad por accidente y exención de responsabilidad, y que regirá mis acciones y responsabilidades en dicha actividad.</p>
+
+            <p>En consideración a mi solicitud y permitiéndole participar en esta actividad, por la presente tomo medidas para mí, mis ejecutores, administradores, herederos, parientes más próximos, sucesores asignando de la siguiente manera:</p>
+
+            <p>(1) RENUNCIO, LIBERO Y DESCARGO de cualquier responsabilidad, incluida, entre otras la responsabilidad derivada de la negligencia o culpa de las entidades o personas liberadas, por mi muerte, discapacidad, lesión personal, daño a la propiedad, robo de propiedad o acciones de cualquier tipo que pueda ocurrir en el futuro, incluido mi viaje hacia y desde esta actividad, LAS SIGUIENTES ENTIDADES O PERSONAS DE LA ORGANIZACIÓN DE PUERCA VENGANZA, sus directores, funcionarios, voluntarios, representantes y agentes, y los titulares de actividades y patrocinadores.</p>
+
+            <p>(2) INDEMNIFICAR, CUMPLIR CON OBJETO Y PROMETER QUE NO LLEGARÁ a las entidades o personas mencionadas en este párrafo de todas las responsabilidades reclamadas como resultado de la participación en esta actividad, ya sea causada por la negligencia de la liberación o de otra manera. Yo reconozco que sus directores, funcionarios, voluntarios, representantes y agentes NO son responsables de los errores, omisiones o actos de cualquier parte o entidad que realice una actividad específica en su nombre.</p>
+
             <div class="form-field">
-                <label for="dni">DNI y firma del Librador</label>
-                <input type="text" id="dni" name="dni" class="underline" required>
-            </div>
-            <div class="form-field">
-                <label for="nombre">Yo</label>
+                <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" class="underline" required>
             </div>
             <div class="form-field">
-                <label for="localidad">En</label>
-                <input type="text" id="localidad" name="localidad" class="underline" required>
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" class="underline" required>
             </div>
-            <div class="form-field">
-                <label for="riesgos">ASUMO TODOS LOS RIESGOS DE PARTICIPAR EN CUALQUIERA / TODAS LAS ACTIVIDADES...</label>
-                <textarea id="riesgos" name="riesgos" required></textarea>
+
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" name="aceptar" required> Acepto el contrato de exoneración
+                </label>
             </div>
-            <div class="form-field">
-                <label for="certifico1">CERTIFICO que estoy en buena forma física, que tengo suficiente preparación o capacitación...</label>
-                <textarea id="certifico1" name="certifico1" required></textarea>
-            </div>
-            <div class="form-field">
-                <label for="certifico2">CERTIFICO que no hay motivos o problemas relacionados con la salud que impidan mi participación...</label>
-                <textarea id="certifico2" name="certifico2" required></textarea>
-            </div>
-            <div class="form-field">
-                <label for="renuncia">RENUNCIO, LIBERO Y DESCARGO de cualquier responsabilidad...</label>
-                <textarea id="renuncia" name="renuncia" required></textarea>
-            </div>
-            <div class="form-field">
-                <label for="indemnizar">INDEMNIFICAR, CUMPLIR CON OBJETO Y PROMETER...</label>
-                <textarea id="indemnizar" name="indemnizar" required></textarea>
-            </div>
-            <div class="form-field">
-                <label for="firma">Firma</label>
-                <input type="text" id="firma" name="firma" class="underline" required>
-            </div>
+
             <button type="submit" class="submit-btn">Enviar Formulario</button>
         </form>
     </div>
