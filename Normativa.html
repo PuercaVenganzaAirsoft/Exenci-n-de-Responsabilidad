@@ -1,222 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Exención de Responsabilidad</title>
+    <title>Los 12 Mandamientos del Buen Guarro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('Barro.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
             margin: 0;
-            padding: 10px;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            background-image: url('Barro.jpg'); /* Aquí se agrega la imagen de fondo */
-            background-size: cover; /* Hace que la imagen cubra toda la página */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            padding: 0;
         }
-
+        header {
+            background-image: url('logo.png'); /* Asegúrate de poner la ruta correcta de tu logo */
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 150px;
+            background-position: center;
+            margin-bottom: 20px;
+        }
         .container {
-            background-color: white;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
-            width: 90%;
-            /* Adapta el ancho para pantallas pequeñas */
-            max-width: 600px;
-            /* Limita el ancho máximo en pantallas grandes */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo con algo de transparencia */
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #9e8f64;
         }
-
         h1 {
             text-align: center;
-            color: #333;
-            font-size: 1.5rem;
-            /* Ajusta el tamaño del texto */
+            color: #3b2d16;
+            font-size: 36px;
+            text-transform: uppercase;
         }
-
-        .form-field {
-            margin: 15px 0;
+        ul {
+            list-style: none;
+            padding: 0;
         }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
+        li {
+            background: url('mud-splash.png') no-repeat left center;
+            background-size: 30px;
+            padding-left: 40px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #3b2d16;
+            line-height: 1.6;
         }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
+        li:nth-child(odd) {
+            background-color: #d1c49f;
         }
-
-        textarea {
-            height: 120px;
-        }
-
-        .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 1.2rem;
-            /* Botón más grande */
-        }
-
-        .submit-btn:hover {
-            background-color: #45a049;
-        }
-
-        .checkbox-container {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* Logo */
-        .logo {
-            width: 125%;
-            /* Incrementa el tamaño del logo */
-            max-width: 450px;
-            /* Ajusta el tamaño máximo */
-            height: auto;
-
-        }
-
-        .logo {
-            position: relative;
-
-        }
-
-        .footer {
-            background-color: white;
-            padding: 5px;
-            border-radius: 10%;
-            text-align: center;
-            font-size: 0.8rem;
-            margin-top: 20px;
-        }
-
-        /* Media Queries para móviles */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.2rem;
-            }
-
-            .submit-btn {
-                padding: 10px 15px;
-                font-size: 1rem;
-            }
-
-            .checkbox-container {
-                font-size: 0.8rem;
-            }
-
-            .logo {
-                width: 100%;
-                /* Más grandes en móviles */
-                max-width: 280px;
-                /* Aumenta el tamaño máximo */
-            }
-
-            .footer {
-                font-size: 0.7rem;
-            }
+        li:nth-child(even) {
+            background-color: #c3b88d;
         }
     </style>
 </head>
-
 <body>
-    <!-- Logo en la esquina superior derecha -->
-    <img src="Logo.png" alt="Logo" class="logo">  
-
+    <header></header>
     <div class="container">
-        <h1>Formulario General de Exención de Responsabilidad</h1>
-        <form action="https://formspree.io/f/mgvedred" method="POST">
-
-            <p><strong>Las normas del campo La Cochiquera y los derechos de privacidad están disponibles en los enlaces al pie de la página.</strong></p>
-
-            <p>ASUMO TODOS LOS RIESGOS DE PARTICIPAR EN CUALQUIERA / TODAS LAS ACTIVIDADES llevadas a cabo por la
-                organización de PUERCA VENGANZA, incluyendo a modo de ejemplo y sin limitación, cualquier riesgo que
-                pueda surgir por negligencia o descuido por parte de las personas o entidades liberadas, por equipos o
-                bienes peligrosos o defectuosos que sean de su propiedad, mantenidos o controlados por ellos, o por su
-                posible responsabilidad sin culpa.</p>
-
-            <p>CERTIFICO que estoy en buena forma física, que tengo suficiente preparación o capacitación para
-                participar en esta actividad y que no he sido recomendado por un profesional médico cualificado para no
-                participar.</p>
-
-            <p>CERTIFICO que no hay motivos o problemas relacionados con la salud que impidan mi participación en esta
-                actividad.</p>
-
-            <p>Reconozco que los titulares, patrocinadores y organizadores de la actividad en la que puedo participar
-                utilizarán este Formulario de exención de responsabilidad por accidente y exención de responsabilidad, y
-                que regirá mis acciones y responsabilidades en dicha actividad.</p>
-
-            <p>En consideración a mi solicitud y permitiéndole participar en esta actividad, por la presente tomo
-                medidas para mí, mis ejecutores, administradores, herederos, parientes más próximos, sucesores asignando
-                de la siguiente manera:</p>
-
-            <p>(1) RENUNCIO, LIBERO Y DESCARGO de cualquier responsabilidad, incluida, entre otras la responsabilidad
-                derivada de la negligencia o culpa de las entidades o personas liberadas, por mi muerte, discapacidad,
-                lesión personal, daño a la propiedad, robo de propiedad o acciones de cualquier tipo que pueda ocurrir
-                en el futuro, incluido mi viaje hacia y desde esta actividad, LAS SIGUIENTES ENTIDADES O PERSONAS DE LA
-                ORGANIZACIÓN DE PUERCA VENGANZA, sus directores, funcionarios, voluntarios, representantes y agentes, y
-                los titulares de actividades y patrocinadores.</p>
-
-            <p>(2) INDEMNIFICAR, CUMPLIR CON OBJETO Y PROMETER QUE NO LLEGARÁ a las entidades o personas mencionadas en
-                este párrafo de todas las responsabilidades reclamadas como resultado de la participación en esta
-                actividad, ya sea causada por la negligencia de la liberación o de otra manera. Yo reconozco que sus
-                directores, funcionarios, voluntarios, representantes y agentes NO son responsables de los errores,
-                omisiones o actos de cualquier parte o entidad que realice una actividad específica en su nombre.</p>
-
-            <div class="form-field">
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" class="underline" required>
-            </div>
-            <div class="form-field">
-                <label for="dni">DNI</label>
-                <input type="text" id="dni" name="dni" class="underline" required>
-            </div>
-
-            <!-- Campo de correo electrónico con validación -->
-            <div class="form-field">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" class="underline" required
-                    placeholder="ejemplo@dominio.com">
-            </div>
-        
-
-            <div class="checkbox-container">
-                <label>
-                    <input type="checkbox" name="aceptar" required> Acepto los términos y condiciones del formulario de
-                    exoneración de responsabilidad.
-                </label>
-            </div>
-
-            <button type="submit" class="submit-btn">Enviar Formulario</button>
-        </form>
-    </div>
-
-    <div class="footer">
-        <p>© 2022 PUERCA VENGANZA. Todos los derechos reservados. </p>
-        <a href="Normativa.html">NORMATIVA</a>
-        <a href="derechos_de_privacidad.html">Derechos de privacidad</a>
+        <h1>Los 12 Mandamientos de la Conducta del Buen Guarro en la Cochiquera</h1>
+        <ul>
+            <li><strong>1. Potencia del arma:</strong> Las armas deben tener una potencia inferior a 1 julio. El incumplimiento o el intento de engaño conlleva la expulsión indefinida.</li>
+            <li><strong>2. Armas blancas:</strong> Solo se permiten armas blancas de plástico y, preferiblemente, flexibles. Se prohíben armas de materiales contundentes o con filo. El incumplimiento conlleva expulsión temporal o permanente si es reincidente.</li>
+            <li><strong>3. Cronometrado de armas:</strong> Las armas están cronometradas para no exceder los 1 julio de potencia, lo que permite disparar a 0 metros de distancia. Se recomienda evitar disparos en zonas peligrosas (como la cabeza), aunque esto es en parte muchas veces provocado por el propio jugador que solo expone la cabeza.</li>
+            <li><strong>4. Forma de disparo:</strong> Se prohíbe la "manera libanesa" de disparar. El arma debe tener 3 puntos de contacto con el cuerpo.</li>
+            <li><strong>5. Protección obligatoria:</strong> El uso de bocal y gafas es obligatorio en todo momento durante el juego. El casco, aunque altamente recomendado, no es de uso obligatorio. Se recomienda a los jugadores acudir con dos pares de gafas: uno para el momento de juego y otro para la zona de descanso y preparación. Además, se deberá portar únicamente el equipo estrictamente necesario para transportar la munición y proporcionar una protección adecuada contra los disparos, asegurando que dicha protección no interfiera con la dinámica del juego al impedir la sensación de impacto. Esta decisión estará a cargo de la directiva de Puerca Venganza.</li>
+            <li><strong>6. Granadas y proyectiles:</strong> Las granadas que desprendan bolas, polvo de talco o cualquier material similar están prohibidas. Se permiten las granadas pirotécnicas o de petardos.</li>
+            <li><strong>7. Muerte por proximidad:</strong> Está permitida siempre que no interrumpa el juego ni afecte a otros jugadores. Es preferible un disparo o cuchillada por proximidad a parar el juego.</li>
+            <li><strong>8. Discusión y comportamiento:</strong> Las discusiones están prohibidas en el campo de juego. Las infracciones pueden resultar en expulsión temporal o permanente si son reincidentes.</li>
+            <li><strong>9. Inicio y fin del juego:</strong> El juego comienza y termina con un silbido. Fuera de este intervalo, solo se puede disparar en la zona designada o en ventanas que den hacia el campo de tiro.</li>
+            <li><strong>10. Decisiones de la directiva:</strong> Las decisiones de la directiva son definitivas y no se discuten.</li>
+            <li><strong>11. Condiciones personales:</strong> Cualquier comportamiento que afecte negativamente a la seguridad, las condiciones del juego o la capacidad para participar de manera óptima será motivo de no poder jugar ese día. Esta decisión la toma la directiva.</li>
+            <li><strong>12. Comportamiento antideportivo:</strong> Cualquier actitud antideportiva o irrespetuosa será castigada con expulsión permanente.</li>
+        </ul>
     </div>
 </body>
-
 </html>
